@@ -1,1 +1,32 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 /* styles go here */
+body {
+    margin: 10px;
+}
+h1 {
+    margin-bottom: 30px;
+}
+.block {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    position: relative;
+}
+
+.block div {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.block p {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: white;
+}
+

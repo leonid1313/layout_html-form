@@ -12,6 +12,85 @@
   </head>
   <body>
     <h1>HTML Form</h1>
+    <form action="#" method="POST" enctype="multipart/form-data" onsubmit="onSubmit()">
+      <div class="block">
+        <p>Personal information</p>
+        <div>
+          <span>Surname:</span>
+          <input type="text" name="Surname" tabindex="1" required>
+        </div>
+        <div>
+          <span>Name:</span>
+          <input type="text" name="Name" tabindex="2">
+        </div>
+        <div>
+          <span>How old are you?</span>
+          <input value="12" type="text" name="age" tabindex="3">
+        </div>
+        <div>
+          <span>Full date of birth:</span>
+          <input type="date" name="date" tabindex="4" min="1" max="31">
+        </div>
+        <div>
+          <span>I accept the term of the agreement</span>
+          <input type="checkbox" name="accept" tabindex="5">
+        </div>
+      </div>
+      <div class="block">
+        <p>Registration</p>
+        <div>
+          <span>E-mail: </span>
+          <input placeholder="email@example.com" type="email" name="E-mail" tabindex="6">
+        </div>
+        <div>
+          <span>Password: </span>
+          <input type="password" name="Password" tabindex="7" minlength="6" maxlength="13">
+        </div>
+      </div>
+      <div class="block">
+        <p>An intresting fact about you</p>
+        <div>
+          <span>Do you love cats?</span>
+          <input type="radio" name="animals" tabindex="8"> Yes
+          <input type="radio" name="animals" tabindex="8"> No
+        </div>
+        <div>
+          <span>What is your favourite color?</span>
+          <input type="color" name="color" tabindex="9">
+        </div>
+        <div>
+          <span>What time do you go to bag?</span>
+          <input type="time" name="time" tabindex="10">
+        </div>
+        <div>
+          <span>What are your favourite brand of cars?</span>
+          <select multiple name="usercar" tabindex="11">
+            <option value="BMW">red</option>
+            <option value="Infiniti">green</option>
+            <option value="Lada">black</option>
+          </select>
+        </div>
+        <div>
+          <span>How do you rate our work?</span>
+          <input type="range" name="range" tabindex="12" min="1" max="100">
+        </div>
+      </div>
+      <div class="block">
+        <p>Aditional info:</p>
+        <div>
+          <span>comments:</span>
+          <textarea tabindex="13" name="comments"></textarea>
+        </div>
+        <div>
+          <span>Whould you like recommend us?</span>
+          <select name="recommend" tabindex="14">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
