@@ -14,21 +14,21 @@
     <form action="#" method="POST"
       enctype="multipart/form-data" onsubmit="onSubmit()"
     >
-      <fieldset class="block">
+      <fieldset class="section">
         <legend>Personal information</legend>
-        <div>
+        <div class="block">
           <label for="surname">Surname:</label>
           <input type="text" name="surname"
             required id="surname"
           >
         </div>
-        <div>
+        <div class="block">
           <label for="name">Name:</label>
           <input type="text" name="name"
             id="name"
           >
         </div>
-        <div>
+        <div class="block">
           <label for="age">How old are You?</label>
           <input value="12" type="number"
             name="age" data-qa="field-value"
@@ -36,29 +36,29 @@
             id="age"
           >
         </div>
-        <div>
+        <div class="block">
           <label for="date">Full date of birth:</label>
           <input type="date" name="date"
             id="date"
           >
         </div>
-        <div>
+        <div class="block">
           <label for="accept">I accept the term of the agreement</label>
           <input type="checkbox" name="accept"
             id="accept"
           >
         </div>
       </fieldset>
-      <fieldset class="block">
+      <fieldset class="section">
         <legend>Registration</legend>
-        <div>
+        <div class="block">
           <label for="email">E-mail:</label>
           <input type="email"
             name="email" id="email"
             data-qa="field-placeholder" placeholder="email@example.com"
           >
         </div>
-        <div>
+        <div class="block">
           <label for="password">Password:</label>
           <input type="password" name="password"
             minlength="6" id="password"
@@ -66,9 +66,9 @@
           >
         </div>
       </fieldset>
-      <fieldset class="block">
+      <fieldset class="section">
         <legend>An interesting fact about you!</legend>
-        <div>
+        <div class="block">
           <label for="yes">
             Do you love cats?
             <input type="radio" name="animals"
@@ -81,19 +81,19 @@
             > No
           </label>
         </div>
-        <div>
+        <div class="block">
           <label for="color">What is your favorite color?</label>
           <input type="color" name="color"
             id="color"
           >
         </div>
-        <div>
+        <div class="block">
           <label for="time">What time do you go to bed?</label>
           <input type="time" name="time"
             step="1" id="time"
           >
         </div>
-        <div>
+        <div class="block">
           <label for="usercar">What are your favorite brand of cars?
             <select multiple name="usercar"
               id="usercar">
@@ -103,7 +103,7 @@
             </select>
           </label>
         </div>
-        <div>
+        <div class="block">
           <label for="range">How do you rate our work?</label>
           <input type="range" name="range"
             value="0" id="range"
@@ -111,13 +111,13 @@
           >
         </div>
       </fieldset>
-      <fieldset class="block">
+      <fieldset class="section">
         <legend>Additional info:</legend>
-        <div>
+        <div class="block">
           <label for="comments">Comments:</label>
           <textarea id="comments" name="comments"></textarea>
         </div>
-        <div>
+        <div class="block">
           <label for="recommend">Would you recommend us?</label>
           <select name="recommend" id="recommend">
             <option value="Yes">yes</option>

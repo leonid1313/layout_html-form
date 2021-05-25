@@ -1,8 +1,8 @@
 /* styles go here */
-.block {
+.section {
   margin-bottom: 20px;
 }
 
-.block div:not(:last-child) {
+.section .block:not(:last-child) {
   margin-bottom: 10px;
 }
